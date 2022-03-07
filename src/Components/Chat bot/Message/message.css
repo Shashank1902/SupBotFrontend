@@ -1,0 +1,33 @@
+.message-avatar-container {
+  background: #313949;
+  mix-blend-mode: normal;
+  box-shadow: -10px -10px 20px rgba(57, 66, 83, 0.35),
+    10px 10px 20px rgba(24, 28, 39, 0.35);
+  border: 2px solid #2a3140;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-avatar {
+  width: 30px;
+  height: 30px;
+  margin-left: 0;
+  border-radius: 50%;
+}
+
+.clientMsg {
+  display: flex;
+  justify-content: flex-end;
+  margin: 5px 15px;
+}
+
+.botMsg {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  margin: 5px 15px;
+}

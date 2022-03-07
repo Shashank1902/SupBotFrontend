@@ -1,0 +1,205 @@
+body {
+  background: #2b3240;
+}
+
+.chatbot-wrapper {
+  display: flex;
+}
+
+/* ************** left title section *****************/
+.title-cont {
+  flex: 2;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 56px;
+  color: white;
+  letter-spacing: 5px;
+  margin-left: 30px;
+}
+
+.bot-img-cont {
+  margin-top: 25px;
+  margin-left: 40px;
+}
+.bot-img {
+  width: 300px;
+}
+
+/* ************** mid chat section *****************/
+
+.mid-chat-sec {
+  flex: 3;
+  /* background-color: aqua; */
+  margin: 15px;
+  margin-top: 30px;
+  background: linear-gradient(47.94deg, #2c3341 19.6%, #313949 77.32%);
+  border: 2px solid rgba(49, 57, 73, 0.5);
+  box-sizing: border-box;
+  box-shadow: -10px -10px 20px rgba(72, 80, 99, 0.26), 10px 10px 20px #262c37;
+  border-radius: 5%;
+}
+
+.chatbot-container {
+  width: 100%;
+  height: 77vh;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+
+.message-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-snap-align: end;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+.message-container::-webkit-scrollbar {
+  display: none;
+}
+
+.msg-box {
+  color: white;
+  font-size: 16px;
+  width: auto;
+  max-width: 300px;
+  margin: 0 5px;
+  padding: 10px 20px;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.25);
+  background: rgba(255, 122, 0, 0.46);
+  mix-blend-mode: normal;
+  border: 2px solid rgba(255, 122, 0, 0.2);
+  box-sizing: border-box;
+  box-shadow: -8px -8px 20px rgba(72, 80, 94, 0.45),
+    8px 8px 20px rgba(24, 28, 39, 0.45),
+    inset -8px -8px 10px rgba(176, 118, 63, 0.74),
+    inset 8px 8px 10px rgba(62, 31, 3, 0.53);
+  border-radius: 30px;
+}
+
+.msg-box a {
+  color: white;
+}
+
+.input-form-cont {
+  width: 100%;
+  padding-top: 10px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  box-shadow: 0px -8px 20px rgba(11, 16, 26, 0.205);
+}
+
+.input-container {
+  width: 95%;
+  height: 50px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+  background: #303746;
+  mix-blend-mode: normal;
+  border: 2px solid #333b4a;
+  box-sizing: border-box;
+  box-shadow: -8px -8px 20px rgba(72, 80, 94, 0.45),
+    8px 8px 20px rgba(24, 28, 39, 0.45), inset -8px -8px 10px #2d3547,
+    inset 8px 8px 10px #2b3240;
+  border-radius: 50px;
+  color: white;
+}
+
+.message-input {
+  width: 90%;
+  height: 95%;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding-left: 15px;
+  background: transparent;
+  color: white;
+}
+
+.submit-button {
+  height: 100%;
+  width: 50px;
+  background: #0d324d;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: -1px;
+  background: #313949;
+  mix-blend-mode: normal;
+  border: 2px solid #2a3140;
+  box-sizing: border-box;
+  box-shadow: -10px -10px 20px rgba(57, 66, 83, 0.35),
+    10px 10px 20px rgba(24, 28, 39, 0.35);
+  border-radius: 100%;
+}
+.submit-button img {
+  margin-left: 5px;
+}
+
+.submit-button:hover {
+  transform: scale(1.01);
+}
+
+.voice-con {
+  width: 50px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-mic {
+  font-size: 30px;
+  width: 30px;
+  height: 100%;
+  cursor: pointer;
+  color: #03a9f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.disablbe-mic {
+  pointer-events: none;
+  font-size: 30px;
+  width: 30px;
+  height: 100%;
+  cursor: pointer;
+  color: #0d324d7e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-mic:hover {
+  transform: scale(1.01);
+  filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0.25));
+}
+
+/* ************** right section *****************/
+.right-sec {
+  /* background-color: red; */
+  flex: 2;
+}
+.sel-lang-cont {
+  font-size: 24px;
+  color: black;
+  font-family: "Poppins", sans-serif;
+}
+.sel-lang-cont select {
+  font-size: 24px;
+  margin-left: 10px;
+}
